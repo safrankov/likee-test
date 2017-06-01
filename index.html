@@ -1,10 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <link rel="stylesheet" href="cssBuild/main.css">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div class="main-wrapper">
+    <header class="main-header">
+        <div class="container">
+            <a href="" class="logo"></a>
+
+            <ul class="main-menu">
+                <li class="main-menu__item"><a href="" class="main-menu__link">Новокузнецк 400</a></li>
+                <li class="main-menu__item"><span class="main-menu__link main-menu__link--active">Календарь событий</span></li>
+                <li class="main-menu__item"><a href="" class="main-menu__link">Голосование</a></li>
+                <li class="main-menu__item"><a href="" class="main-menu__link">Проекты</a></li>
+                <li class="main-menu__item"><a href="" class="main-menu__link">Благоустройство</a></li>
+            </ul>
+
+            <div class="main-header-controls">
+                <span class="main-header-controls__item icon icon--search"></span>
+                <span class="main-header-controls__item icon icon--userpic"></span>
+                <span class="main-header-controls__item icon icon--menu"></span>
+            </div>    
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="columns">
+                <div class="columns__item columns__item--1-2">
+                    <div class="events swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="events__item swiper-slide">
+                                <a href="" class="events__title">Городской праздник здорового образа жизни</a>
+
+                                <div class="events__date">
+                                    <span class="events__day">25 мая</span>
+                                    <span class="events__time">14:00 – 21:30</span>
+                                </div>
+
+                                <div class="events__countdown">
+                                    <span class="events__countdown-value">172</span>
+                                    <span class="events__countdown-text">дня до юбилея</span>
+                                </div>
+
+                                <div class="events__buttons">
+                                    <a href="" class="button">Город-сад</a>
+                                    <a href="" class="button">Город-спорт</a>
+                                </div>
+                            </div>
+                            <div class="events__item swiper-slide">
+                                <a href="" class="events__title">Праздник не здорового образа жизни</a>
+
+                                <div class="events__date">
+                                    <span class="events__day">25 мая</span>
+                                    <span class="events__time">14:00 – 21:30</span>
+                                </div>
+
+                                <div class="events__countdown">
+                                    <span class="events__countdown-value">172</span>
+                                    <span class="events__countdown-text">дня до юбилея</span>
+                                </div>
+
+                                <div class="events__buttons">
+                                    <a href="" class="button">Город-сад</a>
+                                    <a href="" class="button">Город-спорт</a>
+                                </div>
+                            </div>
+                            <div class="events__item swiper-slide">
+                                <a href="" class="events__title">Ещё один праздник</a>
+
+                                <div class="events__date">
+                                    <span class="events__day">25 мая</span>
+                                    <span class="events__time">14:00 – 21:30</span>
+                                </div>
+
+                                <div class="events__countdown">
+                                    <span class="events__countdown-value">172</span>
+                                    <span class="events__countdown-text">дня до юбилея</span>
+                                </div>
+
+                                <div class="events__buttons">
+                                    <a href="" class="button">Город-сад</a>
+                                    <a href="" class="button">Город-спорт</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="columns__item columns__item--1-2">
+                    <div class="events-list">
+                        <div class="events-list__item">
+                            <a href="" class="events-list__name-link">Проводы зимы или «Масленица»</a>
+                            <a href="" class="events-list__description-link">Площать общественных мероприятий</a>
+                            <div class="events-list__time">14:00</div>
+                        </div>
+                        <div class="events-list__item">
+                            <a href="" class="events-list__name-link">Очень длинный и особенный заголовок</a>
+                            <a href="" class="events-list__description-link">Площать общественных мероприятий</a>
+                            <div class="events-list__time">15:00—15:30</div>
+                        </div>
+                        <div class="events-list__item">
+                            <a href="" class="events-list__name-link">Проводы зимы или «Масленица»</a>
+                            <a href="" class="events-list__description-link">Площать общественных мероприятий</a>
+                            <div class="events-list__time">15:00—15:30</div>
+                        </div>
+                        <div class="events-list__item">
+                            <a href="" class="events-list__name-link">Проводы зимы или «Масленица»</a>
+                            <a href="" class="events-list__description-link">Площать общественных мероприятий</a>
+                            <div class="events-list__time">15:00—15:30</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

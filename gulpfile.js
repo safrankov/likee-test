@@ -1,8 +1,9 @@
 var gulp = require('gulp'),
+    autoprefixer = require('gulp-autoprefixer'),
     csso = require('gulp-csso'),
     sass = require('gulp-sass'),
-    browserSync = require('browser-sync'),
     spritesmith = require('gulp.spritesmith'),
+    browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
 var paths = {
@@ -30,6 +31,10 @@ gulp.task('html', function() {
 gulp.task('scss', function() {
     return gulp.src('scss/main.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: false
+        }))
         .pipe(csso())
         .pipe(gulp.dest('cssBuild'))
         .pipe(reload({stream: true}))

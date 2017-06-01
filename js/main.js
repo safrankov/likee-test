@@ -1,3 +1,10 @@
-/**
- * Created by safrankov on 01.06.17.
- */
+$(document).ready(function () {
+
+    var eventsSlider = new Swiper ('.swiper-container', {
+        loop: true,
+        slidesPerView: 1,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    })
+
+});

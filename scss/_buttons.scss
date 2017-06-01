@@ -1,0 +1,21 @@
+.button{
+  position: relative;
+  display: inline-block;
+  height: 42px;
+  line-height: 42px;
+  background: #ebebeb;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  color: #303336;
+  font-size: 18px;
+  padding: 0 30px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover{
+    color: #fff;
+    background: #e61035;
+  }
+}

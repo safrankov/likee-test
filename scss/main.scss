@@ -1,0 +1,243 @@
+@import "reset";
+@import "fonts";
+@import "sprites";
+@import "icons";
+@import "buttons";
+@import "swiper";
+
+@mixin clear{
+  content: '';
+  clear: both;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+}
+
+.main-wrapper{
+  position: relative;
+  width: 100%;
+}
+
+.container{
+  position: relative;
+  margin: 0 auto;
+  width: 1280px;
+
+  &:after{
+    @include clear;
+  }
+}
+
+.columns{
+  &__item{
+    display: inline-block;
+    vertical-align: top;
+
+    &--1-2{
+      width: 635px;
+    }
+  }
+}
+
+.main-header{
+  position: relative;
+  height: 90px;
+  margin-bottom: 70px;
+  box-shadow: 1px 1.7px 15px rgba(8, 8, 8, 0.15);
+}
+
+.main-header-controls{
+  position: relative;
+  float: right;
+  top: 25px;
+  padding-top: 2px;
+
+  &:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 1px;
+    height: 43px;
+    background: #e1e1e1;
+  }
+
+  &__item{
+    margin-left: 30px;
+    vertical-align: middle;
+  }
+}
+
+.logo{
+  position: relative;
+  top: 25px;
+  display: inline-block;
+  vertical-align: top;
+  width: 122px;
+  height: 41px;
+  margin-right: 49px;
+  @include sprite($logo);
+}
+
+.main-menu{
+  position: relative;
+  top: 25px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+
+  &__item{
+    display: inline-block;
+  }
+
+  &__link{
+    display: inline-block;
+    color: #a6a6a6;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 24px;
+    transition: all .2s;
+
+    &--active{
+      background: #f0f0f0;
+      border-radius: 25px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    &:hover{
+      color: #000;
+    }
+  }
+}
+
+.events{
+
+  &__item{
+    position: relative;
+    padding-bottom: 45px;
+  }
+
+  &__title{
+    display: block;
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-size: 62px;
+    line-height: 60px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover{
+      color: #e61035;
+    }
+  }
+
+  &__date{
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  &__day{
+    display: inline-block;
+    color: #303336;
+    font-weight: bold;
+  }
+
+  &__time{
+    position: relative;
+    display: inline-block;
+    color: #b0b0b0;
+    font-family: 'Proxima Nova Lt', sans-serif;
+    margin-left: 18px;
+    padding-left: 25px;
+
+    &:before{
+      position: absolute;
+      top: 15px;
+      left: 0;
+      content: '';
+      display: block;
+      @include sprite($icon-time-circle);
+    }
+  }
+
+  &__countdown{
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  &__countdown-value{
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  &__countdown-text{
+    display: inline-block;
+    font-family: 'Proxima Nova Lt', sans-serif;
+    font-size: 20px;
+    color: #303336;
+  }
+
+  &__buttons{
+    .button{
+      margin-right: 10px;
+    }
+  }
+}
+
+.events-list{
+  position: relative;
+  width: 465px;
+  float: right;
+  border-top: 1px solid #e1e1e1;
+
+  &__item{
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 25px 0;
+
+    &:after{
+      @include clear;
+    }
+  }
+
+  &__name-link{
+    display: block;
+    color: #303336;
+    font-size: 20px;
+    text-decoration: none;
+    max-width: 330px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 3px;
+    transition: all 0.2s;
+
+    &:hover{
+      color: #e61035;
+    }
+  }
+
+  &__description-link{
+    color: #a6a6a6;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover{
+      color: #303336;
+    }
+  }
+
+  &__time{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    display: block;
+    font-size: 22px;
+    color: #000;
+  }
+}

@@ -1,0 +1,27 @@
+.icon{
+  display: inline-block;
+  vertical-align: middle;
+
+  &--search{
+    cursor: pointer;
+    @include sprite($icon-search);
+
+    &:hover{
+      @include sprite($icon-search-hover);
+    }
+  }
+
+  &--userpic{
+    cursor: pointer;
+    @include sprite($icon-userpic);
+  }
+
+  &--menu{
+    cursor: pointer;
+    @include sprite($icon-menu);
+
+    &:hover{
+      @include sprite($icon-menu-hover);
+    }
+  }
+}
