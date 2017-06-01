@@ -57,5 +57,5 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', ['watch', 'browserSync']);
-gulp.task('build', ['sprite', 'scss']);
+gulp.task('build', ['sprite', 'scss', 'browserSync']);
 
