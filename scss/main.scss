@@ -63,7 +63,7 @@
   }
 
   &__item{
-    margin-left: 30px;
+    margin-left: 24px;
     vertical-align: middle;
   }
 }
@@ -239,5 +239,19 @@
     display: block;
     font-size: 22px;
     color: #000;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container{
+    width: 1200px;
+  }
+
+  .columns__item--1-2{
+    width: 595px;
+  }
+
+  .main-menu__link{
+    padding: 10px 15px;
   }
 }
